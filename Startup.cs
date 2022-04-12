@@ -1,23 +1,20 @@
 ﻿
-using Azure.Identity;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Azure.KeyVault;
 using Microsoft.Azure.Services.AppAuthentication;
-using Microsoft.Extensions.Azure;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Configuration.AzureKeyVault;
-using Microsoft.Extensions.Configuration.UserSecrets;
 using Microsoft.Extensions.DependencyInjection;
-using SharePointFileToBlob.Interfaces;
-using SharePointFileToBlob.Models;
-using SharePointFileToBlob.Services;
+using TransferToBlobFunction.Interfaces;
+using TransferToBlobFunction.Models;
+using TransferToBlobFunction.Services;
 using System;
 using System.Reflection;
 
-[assembly: FunctionsStartup(typeof(SharePointFileToBlob.Startup))]
+[assembly: FunctionsStartup(typeof(TransferToBlobFunction.Startup))]
 
 
-namespace SharePointFileToBlob
+namespace TransferToBlobFunction
 {
     public class Startup : FunctionsStartup
     {

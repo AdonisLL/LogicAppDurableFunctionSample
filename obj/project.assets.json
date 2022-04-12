@@ -10936,11 +10936,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\code\\cae\\LogicAppDurableFunctionSample\\SharePointFileToBlob.csproj",
-      "projectName": "SharePointFileToBlob",
-      "projectPath": "C:\\code\\cae\\LogicAppDurableFunctionSample\\SharePointFileToBlob.csproj",
+      "projectUniqueName": "C:\\code\\cae\\TransferToBlobFunction\\TransferToBlobFunction.csproj",
+      "projectName": "TransferToBlobFunction",
+      "projectPath": "C:\\code\\cae\\TransferToBlobFunction\\TransferToBlobFunction.csproj",
       "packagesPath": "C:\\Users\\adonislatham\\.nuget\\packages\\",
-      "outputPath": "C:\\code\\cae\\LogicAppDurableFunctionSample\\obj\\",
+      "outputPath": "C:\\code\\cae\\TransferToBlobFunction\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

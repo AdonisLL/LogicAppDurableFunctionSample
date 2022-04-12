@@ -2,13 +2,13 @@
 using Microsoft.Azure.Services.AppAuthentication;
 using Microsoft.Extensions.Options;
 using Microsoft.Graph;
-using SharePointFileToBlob.Interfaces;
-using SharePointFileToBlob.Models;
+using TransferToBlobFunction.Interfaces;
+using TransferToBlobFunction.Models;
 using System;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 
-namespace SharePointFileToBlob.Services
+namespace TransferToBlobFunction.Services
 {
     public class GraphApiClient : IGraphApiClient
     {

@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "SharePointFileToBlob": {
+    "TransferToBlobFunction": {
       "commandName": "Project"
     }
   }

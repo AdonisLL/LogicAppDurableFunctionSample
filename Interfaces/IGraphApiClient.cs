@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SharePointFileToBlob.Interfaces
+namespace TransferToBlobFunction.Interfaces
 {
     public interface IGraphApiClient
     {

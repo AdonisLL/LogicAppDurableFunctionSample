@@ -45,7 +45,7 @@ jobs:
           dotnet-version: ${{ env.DOTNET_VERSION }}
 
       - name: Publish Functions
-        run: dotnet publish SharePointFileToBlob.csproj --configuration Release --output ${{ env.OUTPUT_PATH }}
+        run: dotnet publish TransferToBlobFunction.csproj --configuration Release --output ${{ env.OUTPUT_PATH }}
 
       - name: Package Functions
         uses: actions/upload-artifact@v3
@@ -58,6 +58,13 @@ jobs:
     needs: [build]
     steps:
 
+      
+            
+
+       # Checkout code from repo
+      - name: Checkout code from repo
+        uses: actions/checkout@master
+
       # Authentication
         # Set up the following secrets in your repository: AZURE_CREDENTIALS
         # For details see https://docs.microsoft.com/en-us/azure/developer/github/connect-from-azure
@@ -66,11 +73,6 @@ jobs:
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
             enable-AzPSSession: true
-            
-
-       # Checkout code from repo
-      - name: Checkout code from repo
-        uses: actions/checkout@master
 
       - name: 'Get resource group with PowerShell action 2'
         uses: azure/powershell@v1

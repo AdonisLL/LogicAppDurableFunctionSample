@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SharePointFileToBlob.Models
+namespace TransferToBlobFunction.Models
 {
     public class BlobConfiguration
     {

@@ -1,13 +1,13 @@
 ﻿using Azure.Identity;
 using Azure.Storage.Blobs;
 using Microsoft.Extensions.Options;
-using SharePointFileToBlob.Interfaces;
-using SharePointFileToBlob.Models;
+using TransferToBlobFunction.Interfaces;
+using TransferToBlobFunction.Models;
 using System;
 using System.IO;
 using System.Threading.Tasks;
 
-namespace SharePointFileToBlob.Services
+namespace TransferToBlobFunction.Services
 {
     public class BlobService : IBlobService
     {
@@ -39,6 +39,14 @@ namespace SharePointFileToBlob.Services
 
             // Get a reference to a blob
             return containerClient.GetBlobClient(fileName);
+        }
+
+        public async Task<bool> UploadBlobFromStream(string fileName, Stream stream)
+        {
+            BlobClient blobClient = await GetBlobClient(fileName);
+            var result = await blobClient.UploadAsync(stream, true);
+
+            return true;
         }
 
         public async Task<bool> UploadBlobFromStream(string fileName, byte[] bytesContent)

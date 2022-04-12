@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sVfQhIbT6rXa6cNUzG/YfoLXSKDsq9gOeaGkIOeUbEFUcZ3nXu/qkTxW4cekxzdCbp4x6/8CE2KKzXWTbNQbBg==",
+  "dgSpecHash": "9BdJm++59SKoGclYiPKygVBLsE6TvdDbn2zAH6ZVCJBXo4NB9pPI5nvE17ErIr+ouJ13PWnBElToYW0X36P7pg==",
   "success": true,
-  "projectFilePath": "C:\\code\\cae\\LogicAppDurableFunctionSample\\SharePointFileToBlob.csproj",
+  "projectFilePath": "C:\\code\\cae\\TransferToBlobFunction\\TransferToBlobFunction.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adonislatham\\.nuget\\packages\\azure.core\\1.22.0\\azure.core.1.22.0.nupkg.sha512",
     "C:\\Users\\adonislatham\\.nuget\\packages\\azure.identity\\1.6.0-beta.1\\azure.identity.1.6.0-beta.1.nupkg.sha512",
