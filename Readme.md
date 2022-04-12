@@ -22,7 +22,7 @@ To utilize the Github Action Deployment
 
 1. Clone Repository
 2. [Create a service principal and add it as a GitHub secret](https://docs.microsoft.com/en-us/azure/developer/github/connect-from-azure?tabs=azure-portal%2Cwindows#create-a-service-principal-and-add-it-as-a-github-secret)
-3. Run the "Deploy Logic App - Durable Function Sample" and update any of the defaults (optional)
+3. Run the "Deploy Infrastructure and function code" and update any of the defaults (optional)
 ![](assets/images/github_action1.png)
 ![](assets/images/github_action2.png)
 
